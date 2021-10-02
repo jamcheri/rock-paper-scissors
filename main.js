@@ -1,12 +1,9 @@
 /*
 Rock paper scissors game played against the computer. 
-
 Start with defining problems. Two "people" that make decisions. These would be functions? 
-
 And then one of three decisions.
 */
 
-//array of options to throw
 let computerOptions = "";
 let computerChoice = "";
 let userInput = "";
