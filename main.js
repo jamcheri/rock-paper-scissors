@@ -17,6 +17,20 @@ function computerPlay(computerChoice, computerOptions) {
     return computerChoice;
 }
 
+const buttons = document.querySelectorAll('button');
+// we use the .forEach method to iterate through each button
+buttons.forEach((button) => {
+
+  // and for each one we add a 'click' listener that calls playRound function with correct userInput
+  button.addEventListener('click', () => {
+    //alert(button.id);
+    userInput = button.id;
+    console.log(userInput);
+    playRound(userInput);
+  });
+});
+
+/* not needed
 function userPlay(userInput) {
     userInput = prompt("Choose and enter either Rock, Paper, or Scissors: ");
     userInput = userInput.toLowerCase();
@@ -29,10 +43,10 @@ function userPlay(userInput) {
 
     return userInput;
 }
+*/
 
 function playRound(userInput, computerChoice, result) {
     computerChoice = computerPlay();
-    userInput = userPlay();
 
     if (userInput === computerChoice) {
         result = "Draw";
@@ -128,7 +142,7 @@ function game(result) {
 
 }
 
-game();
+//game();
 
 
 
