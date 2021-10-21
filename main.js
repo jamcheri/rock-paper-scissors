@@ -26,7 +26,7 @@ buttons.forEach((button) => {
     //alert(button.id);
     userInput = button.id;
     console.log(userInput);
-    playRound(userInput);
+    playRound(userInput);   //this passes the value assigned to userInput to the playRound function
   });
 });
 
